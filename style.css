@@ -1,9 +1,6 @@
 body {
   display: grid;
-  grid-template-columns: minmax(1rem, auto) minmax(auto, 72ch) minmax(
-      1rem,
-      auto
-    );
+  grid-template-columns: minmax(1rem, auto) minmax(auto, 72ch) minmax(1rem, auto);
 }
 body > * {
   grid-column: 2;
@@ -28,6 +25,11 @@ nav a {
   line-break: strict;
   font-size: 8rem;
 }
+
+.hue {
+  filter: hue-rotate(90deg);
+}
+
 @media (min-width: 600px) {
   nav {
     flex-direction: row;
